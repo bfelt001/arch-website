@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: #ecb722;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #03a3df;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #1b447f;
+}
+h3 {
+    font-weight: bold;
+    font-size: (17/16)em;
+    color: #1b447f;
+}
+h4 {
+    font-weight: normal;
+    font-size: (17/16)em;
+    color: #444444;
+}
+.card-text {
+    font-size: 1.25em;
+    color: white;
+}
+.yellow-text {
+    color: #ecb722;
+}
+.white-text {
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+header {
+    grid-column: span 12;
+    background-color: #03a3df;
+}
+
+.header-img {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+.header-img> :nth-child(1) {
+    margin-right: auto;
+  }
+
+.header-nav {
+    display: flex;
+    justify-content: right;
+}
+.padding {
+    padding: 0 1rem;
+}
+main {
+    grid-column: span 7;
+}
+aside {
+    grid-column: span 5;
+}
+.about-us {
+    grid-column: span 12;
+}
+
+.row {
+    grid-column: span 12;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+
+  }
+.blue-card {
+    background-color: #1b447f; 
+    border: .5em solid white;
+    padding: .5em;
+    border-radius: 25px;
+}
+.instructor-card {
+   display:inline-block;
+}
+
+.img {
+    float: left;
+    margin-left: auto;
+    margin-right: 1%;
+}
+.right-padding {
+    padding-right: 1rem;
+}
+
+footer {
+    grid-column: span 12;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+.navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    gap: 5px;
+    list-style-type: none;
+}
+.space {
+    list-style: '';
+    padding: 10px;
+    grid-column: 8;
+} 
+.slash {
+    list-style: '/';
+    padding: 10px;
+    color: white;
+} 
+
+.footer-img {
+    background-image: url(styleguide/footerImage.jpg);
+    padding: 0 1rem;
+}
